@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background: #333333; /* Dark grey background */
+  color: #FFFFFF; /* White text */
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-content p,
+footer .footer-content a {
+  color: #FFFFFF;
+}
+
+/* Left Section: About Us and Address */
+footer .footer-content .left {
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-content .about {
+  margin: 0; /* Remove any margin around About Us */
+  font-size: 17px;
+}
+
+footer .footer-content .about p {
+  margin: 0; /* Remove margin from the paragraph inside About Us */
+  font-size: 16px;
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-top: 10px;
+}
+
+footer .footer-content .address {
+  margin-top: 32px; /* Ensure there's space between Address and other sections */
+}
+
+footer .footer-content .address p {
+  margin: 0; /* Remove extra margin around Address paragraph */
+  font-size: 16px;
+  color: #BBBBBB;
+  margin-top: 15px;
+}
+
+/* Middle Section: Quick Links */
+footer .quick-links {
+  width: 30%;
+  margin-top: 20px; /* Same margin-top as other sections */
+  margin-left: 15px;
+}
+
+footer .quick-links h3 {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+footer .quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .quick-links ul li {
+  margin-bottom: 10px; /* Space between links */
+}
+
+footer .quick-links ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer .quick-links ul li a:hover {
+  color: #555555;
+}
+
+/* Right Section: Contact Us and Social Media */
+footer .footer-content .right {
+  width: 30%;
+  margin-top: 30px; /* Same margin-top as other sections */
+  font-size: 16px;
+}
+
+footer .footer-content .right .contact-info {
+  margin-bottom: 20px; /* Space between contact info and form */
+  margin-top: 15px;
+}
+
+footer .footer-content .right .contact-info p {
+  font-size: 16px;
+  color: #BBBBBB;
+  margin: 5px 0;
+}
+
+footer .footer-content .right .contact-info i {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+footer .footer-content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #000000; /* Black text inside input */
+  background: #FFFFFF; /* White background for input */
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #666666;
+  margin-top: 10px;
+}
+
+footer .footer-content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #000000;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-content .right input[type="submit"]:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+footer .footer-content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #666666;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+footer .footer-content .media-icons a:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #999999;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom a {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #555555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+  footer .quick-links {
+    text-align: left; /* Align the quick links to the left */
+    margin-top: 30px;
+  }
+  footer .footer-content .right {
+    margin-right: 20px;
+    text-align: left; /* Align the 'Contact Us' section to the left */
+  }
+}
+
+@media (max-width: 1100px) {
+  footer .footer-content .left,
+  footer .footer-content .quick-links,
+  footer .footer-content .right {
+    width: 48%;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .footer-content .left,
+  footer .footer-content .quick-links,
+  footer .footer-content .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .quick-links {
+    margin-left: 20px; /* Left alignment with margin */
+    text-align: left; /* Ensure the links are aligned to the left */
+  }
+  footer .footer-content .right {
+    text-align: left; /* Align the 'Contact Us' section to the left */
+    margin-left: 20px; /* Add left margin for better spacing */
+  }
+}

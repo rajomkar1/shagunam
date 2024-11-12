@@ -1,0 +1,184 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-color: #4070F4;
+  --secondary-color: #265DF2;
+  --light-color: #EFEFEF;
+  --dark-color: #333;
+  --medium-color: #707070;
+  --button-color: #6E93f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-color);
+  margin-top: 80px;
+}
+
+/* Section for Our Team */
+#our-team {
+  margin-top: 40px; /* Space after header */
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+/* Our Team Heading */
+.team-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--dark-color);
+  text-align: center;
+  margin: 15px auto 15px; /* Reduced top and bottom margin */
+}
+
+/* Card Container for Grid Layout */
+.card-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Card Styling */
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; /* Full width within grid */
+  height: 410px; /* Card height */
+  transition: transform 0.3s ease; /* Hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-content {
+  position: relative;
+  width: 100%; /* Full width of card */
+  height: 200px; /* Image container height */
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width of card */
+  height: 200px; /* Image container height */
+  background-color: var(--primary-color);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.card-image {
+  position: relative;
+  width: 144px; /* Image width */
+  height: 144px; /* Image height */
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+}
+
+.card-content {
+  width: 100%; /* Full width of card */
+  padding: 10px;
+  text-align: center;
+  height: 210px; /* Adjusted height for content */
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.role {
+  font-size: 16px; /* Same size as description */
+  color: #898989; /* Slightly lighter than description color */
+  font-weight: 400; /* Regular weight to differentiate from the name */
+  margin: 5px 0; /* Adds a small margin for spacing */
+  text-align: center;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--medium-color);
+  text-align: center;
+  margin-top: 10px; /* Space between name and description */
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--secondary-color);
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    padding: 0 20px; /* Side padding for centered, balanced look */
+    gap: 15px; /* Smaller gap between cards */
+  }
+}
+
+/* Tablet to Laptop screen size adjustments */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    gap: 20px;
+    padding: 0 20px; /* Side padding for balanced layout */
+  }
+}
+
+/* Large screen size adjustments */
+@media screen and (min-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on large screens */
+    gap: 20px; /* Adjust gap between cards */
+    padding: 0; /* No extra padding on large screens */
+  }
+}

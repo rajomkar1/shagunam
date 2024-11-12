@@ -1,0 +1,586 @@
+/* Basic Reset and Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #FFFFFF; /* White background */
+  color: #000000; /* Black text color */
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 35px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  display: inline-block;
+  margin: 0 35px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.navlist a:hover {
+  color: #555555;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin-right: 12px;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+#menu-icon {
+  font-size: 34px;
+  color: #000000;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000000;
+}
+
+#about-us {
+  padding: 50px 8%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  margin-top: 100px;
+}
+
+#about-us h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.p1 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.button-wrapper {
+  margin-top: 20px;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.read-more-button:hover {
+  background-color: #555555;
+  transform: translateY(-2px);
+}
+
+/* Import Google Fonts - Poppins (only once) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Swiper Styles */
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.swiper-heading {
+  text-align: center; /* Centers the text */
+  font-size: 2.2rem; /* Increases the font size */
+  font-weight: 600; /* Optional: makes the text bolder */
+  margin-top: 30px; /* Adds margin to the top */
+  color: #333; /* Optional: changes the text color */
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #92a7a8;
+  border-radius: 25px 25px 25px 25px;
+}
+
+
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 8px;
+}
+
+.role {
+  font-size: 16px; /* Same size as description */
+  color: #898989; /* Slightly lighter than description color */
+  font-weight: 400; /* Regular weight to differentiate from the name */
+  margin: 7px 0; /* Adds a small margin for spacing */
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #000000;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #265DF2;
+}
+
+/* Swiper Navigation Button Styling */
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+  header {
+    padding: 20px 4%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .logo {
+    font-size: 25px;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .navlist a {
+    margin: 0 25px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  .container h1 {
+    font-size: 3.2rem;
+  }
+  #about-us {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 940px) {
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 180px;
+    transition: all 0.7s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 0 0 30px;
+    font-size: 1.5rem;
+  }
+  .navlist.open {
+    right: 0;
+  }
+  #about-us {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  #about-us {
+    padding: 30px 5%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background: #333333; /* Dark grey background */
+  color: #FFFFFF; /* White text */
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-content p,
+footer .footer-content a {
+  color: #FFFFFF;
+}
+
+/* Left Section: About Us and Address */
+footer .footer-content .left {
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+footer .footer-content .about {
+  margin: 0; /* Remove any margin around About Us */
+  font-size: 17px;
+}
+
+footer .footer-content .about p {
+  margin: 0; /* Remove margin from the paragraph inside About Us */
+  font-size: 16px;
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-top: 10px;
+}
+
+footer .footer-content .address {
+  margin-top: 32px; /* Ensure there's space between Address and other sections */
+}
+
+footer .footer-content .address p {
+  margin: 0; /* Remove extra margin around Address paragraph */
+  font-size: 16px;
+  color: #BBBBBB;
+  margin-top: 15px;
+}
+
+/* Middle Section: Quick Links */
+footer .quick-links {
+  width: 30%;
+  margin-top: 20px; /* Same margin-top as other sections */
+  margin-left: 15px;
+}
+
+footer .quick-links h3 {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+footer .quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .quick-links ul li {
+  margin-bottom: 10px; /* Space between links */
+}
+
+footer .quick-links ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer .quick-links ul li a:hover {
+  color: #555555;
+}
+
+/* Right Section: Contact Us and Social Media */
+footer .footer-content .right {
+  width: 30%;
+  margin-top: 30px; /* Same margin-top as other sections */
+  font-size: 16px;
+}
+
+footer .footer-content .right .contact-info {
+  margin-bottom: 20px; /* Space between contact info and form */
+  margin-top: 15px;
+}
+
+footer .footer-content .right .contact-info p {
+  font-size: 16px;
+  color: #BBBBBB;
+  margin: 5px 0;
+}
+
+footer .footer-content .right .contact-info i {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+footer .footer-content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #000000; /* Black text inside input */
+  background: #FFFFFF; /* White background for input */
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #666666;
+  margin-top: 10px;
+}
+
+footer .footer-content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #000000;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-content .right input[type="submit"]:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+footer .footer-content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #666666;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+footer .footer-content .media-icons a:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #999999;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom a {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #555555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+  footer .quick-links {
+    text-align: left; /* Align the quick links to the left */
+    margin-top: 30px;
+  }
+  footer .footer-content .right {
+    margin-right: 20px;
+    text-align: left; /* Align the 'Contact Us' section to the left */
+  }
+}
+
+@media (max-width: 1100px) {
+  footer .footer-content .left,
+  footer .footer-content .quick-links,
+  footer .footer-content .right {
+    width: 48%;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .footer-content .left,
+  footer .footer-content .quick-links,
+  footer .footer-content .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .quick-links {
+    margin-left: 20px; /* Left alignment with margin */
+    text-align: left; /* Ensure the links are aligned to the left */
+  }
+  footer .footer-content .right {
+    text-align: left; /* Align the 'Contact Us' section to the left */
+    margin-left: 20px; /* Add left margin for better spacing */
+  }
+}

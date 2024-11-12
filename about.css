@@ -1,0 +1,284 @@
+/* Sidebar Styling */
+.sidebar {
+  top: 90px; /* Set the top distance where the sidebar starts being fixed */
+  left: 0;
+  width: 250px;
+  background-color: #497c7e; /* Sidebar background color */
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure sidebar stays above content */
+  margin-left: 60px; /* Add left margin */
+  overflow: hidden;
+  max-height: 100vh; /* Limit the height of the sidebar */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Sidebar Nav Styling */
+.sidebar .sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 30px 10px;
+}
+
+/* Sidebar Nav List Items */
+.sidebar .sidebar-nav li {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar Nav Links */
+.sidebar .sidebar-nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sidebar .sidebar-nav a:hover,
+.sidebar .sidebar-nav li.active a {
+  color: #eaeaea;
+  font-weight: bold;
+}
+
+/* Active List Item Background */
+.sidebar .sidebar-nav li.active {
+  background: #121435;
+}
+
+/* Sidebar Toggle Button Styling */
+#sidebar-button-container {
+  margin-left: 30px;
+  margin-top: 110px;
+  display: none; /* Hidden by default */
+}
+
+.sidebar-toggle-button button {
+  font-size: 30px;
+  padding: 10px;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-toggle-button button:hover {
+  opacity: 0.8;
+}
+
+/* Close Button Styling */
+#sidebar-close-button {
+  font-size: 30px;
+  padding: 10px;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  display: none; /* Hidden by default */
+}
+
+#sidebar-close-button:hover {
+  opacity: 0.8;
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: calc(250px + 60px); /* Adjusted margin to match sidebar margin */
+  padding: 40px;
+  margin-top: 140px;
+  width: calc(100% - 250px - 60px);
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensure content fills the screen */
+}
+
+.content h1 {
+  font-size: 32px;
+  color: #497c7e;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Statutory Table Styling */
+.statutory-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px; /* Adds more gap between rows */
+}
+
+.statutory-table tr {
+  color: #0170B9; /* Text color for row */
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.statutory-table td {
+  color: #000000; /* Black color for td text */
+  font-weight: bold; /* Bold text for td */
+  font-size: 18px; /* Slightly bigger text */
+  padding: 10px; /* Adds space inside the cells */
+  border: 1px solid #ffffff; /* White border */
+}
+
+/* Media Queries for Responsive Sidebar */
+
+/* 1300px screen width */
+@media (max-width: 1300px) {
+  .sidebar {
+    width: 220px;  /* Reduce sidebar width */
+    margin-top: 90px;
+  }
+  .content {
+    margin-left: calc(220px + 60px); /* Adjust content margin to match sidebar width */
+    width: calc(100% - 220px - 60px);
+    margin-top: 90px;
+  }
+}
+
+/* 1050px screen width */
+@media (max-width: 1050px) {
+  .sidebar {
+    width: 200px;  /* Further reduce sidebar width */
+  }
+  .content {
+    margin-left: calc(200px + 60px);
+    width: calc(100% - 200px - 60px);
+  }
+}
+
+/* 940px screen width */
+@media (max-width: 940px) {
+  .sidebar {
+    width: auto;  /* Further reduce sidebar width */
+    height: auto;
+  }
+  .content {
+    margin-left: calc(180px + 60px);
+    width: calc(100% - 180px - 60px);
+  }
+}
+
+/* 680px screen width */
+@media (max-width: 680px) {
+  .sidebar {
+    width: 0;  /* Hide sidebar on small screens */
+  }
+  .sidebar.open {
+    width: 200px;  /* Show sidebar when toggled */
+  }
+  .content {
+    margin-left: 0;  /* Adjust content layout when sidebar is hidden */
+    width: 100%;
+    margin-top: auto;
+  }
+
+  /* Sidebar Toggle Button Styling on Mobile */
+  #sidebar-button-container {
+    margin-left: 20px;
+    margin-top: 110px;
+    display: block;  /* Show the sidebar button on small screens */
+  }
+
+  /* Display the Close Button when Sidebar is Open */
+  #sidebar-close-button {
+    display: block;  /* Show the close button when sidebar is open */
+  }
+
+  /* Hide Sidebar Nav on small screens */
+  .sidebar-nav {
+    display: none;  /* Hide sidebar nav on small screens */
+  }
+
+  /* Show the sidebar nav when sidebar is open */
+  .sidebar.open .sidebar-nav {
+    display: flex;  /* Show sidebar nav when sidebar is toggled */
+  }
+}
+
+/* 540px screen width */
+@media (max-width: 540px) {
+  .sidebar {
+    width: 0;  /* Hide sidebar on small screens */
+  }
+  .sidebar.open {
+    width: 200px;  /* Show sidebar when toggled */
+  }
+  .content {
+    margin-left: 0;  /* Adjust content layout when sidebar is hidden */
+    width: 100%;
+    margin-top: auto;
+  }
+
+  /* Sidebar Toggle Button Styling on Mobile */
+  #sidebar-button-container {
+    margin-left: 20px;
+    margin-top: 110px;
+    display: block;  /* Show the sidebar button on small screens */
+  }
+
+  /* Display the Close Button when Sidebar is Open */
+  #sidebar-close-button {
+    display: block;  /* Show the close button when sidebar is open */
+  }
+
+  /* Hide Sidebar Nav on small screens */
+  .sidebar-nav {
+    display: none;  /* Hide sidebar nav on small screens */
+  }
+
+  /* Show the sidebar nav when sidebar is open */
+  .sidebar.open .sidebar-nav {
+    display: flex;  /* Show sidebar nav when sidebar is toggled */
+  }
+}
+
+/* 450px screen width */
+@media (max-width: 450px) {
+  .sidebar {
+    width: 0;  /* Hide sidebar on small screens */
+  }
+  .sidebar.open {
+    width: 200px;  /* Show sidebar when toggled */
+  }
+  .content {
+    margin-left: 5px;  /* Adjust content layout when sidebar is hidden */
+    width: 100%;
+  }
+
+  /* Sidebar Toggle Button Styling on Mobile */
+  #sidebar-button-container {
+    margin-left: 20px;
+    margin-top: 90px;
+    display: block;  /* Show the sidebar button on small screens */
+  }
+
+  /* Display the Close Button when Sidebar is Open */
+  #sidebar-close-button {
+    display: block;  /* Show the close button when sidebar is open */
+  }
+
+  /* Hide Sidebar Nav on small screens */
+  .sidebar-nav {
+    display: none;  /* Hide sidebar nav on small screens */
+  }
+
+  /* Show the sidebar nav when sidebar is open */
+  .sidebar.open .sidebar-nav {
+    display: flex;  /* Show sidebar nav when sidebar is toggled */
+  }
+}
