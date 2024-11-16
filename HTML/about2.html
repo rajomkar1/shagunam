@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SMA - Shagunam Micro Association</title>
+    <link rel="stylesheet" href="/CSS/nav.css"> <!-- Ensure correct path -->
+    <link rel="stylesheet" href="/CSS/about.css"> <!-- Ensure correct path -->
+    <link rel="stylesheet" href="/CSS/footer.css"> <!-- Ensure correct path -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/Logo/android-chrome-512x512.png" alt="SMA Logo"> SMA</a>
+        <ul class="navlist">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/HTML/about.html" id="about-link">About Us</a></li>
+            <li><a href="/HTML/projects.html">Projects</a></li>
+            <li><a href="/HTML/our-team.html">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="/HTML/donate.html" class="btn">Donate</a>
+            <!-- Header Menu Icon -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Sidebar Section (Independent of Header Section) -->
+    <div class="page-container">
+<aside class="sidebar" id="sidebar">
+    <!-- Close button inside the sidebar -->
+    <div id="sidebar-close-button">X</div> <!-- Close button -->
+    
+    <nav>
+        <ul class="sidebar-nav">
+            <li><a href="#about" onclick="showContent('about')">About Us</a></li>
+            <li><a href="#status" onclick="showContent('status')">Statutory Status</a></li>
+            <li><a href="#directors" onclick="showContent('directors')">Board of Directors</a></li>
+            <li><a href="#partners" onclick="showContent('partners')">Our Partners</a></li>
+            <li><a href="#policy" onclick="showContent('policy')">Our Policy</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- Sidebar Toggle Button for Mobile -->
+<section id="sidebar-button-container">
+    <div class="sidebar-toggle-button">
+        <button id="sidebar-toggle">☰</button> <!-- Sidebar toggle button -->
+    </div>
+</section>
+</div>
+
+    <!-- Main Content Section -->
+    <main class="content">
+        <section id="about" class="content-section">
+            <h1>About SMA</h1>
+            <p><strong>Shagunam Micro Association (SMA)</strong> is a social development organization dedicated to enhancing the quality of life and fostering holistic development for underserved communities across India. Our mission centers on empowering individuals through education, promoting commerce, arts, sciences, sports, social welfare, and environmental protection.</p>
+            <p>Our organization envisions a society where every individual has access to opportunities for personal and professional growth. We aim to establish centers nationwide to advance educational initiatives and drive positive social change.</p>
+            <p>In alignment with our goals, we collaborate with government agencies, corporate entities, and other NGOs to develop sustainable models that can be scaled and replicated.</p>
+        </section>
+        <!-- Statutory Status-->
+        <section id="status" class="content-section" style="display: none;">
+            <h1>Statutory Status</h1>
+            <table class="statutory-table">
+                <tbody>
+                    <tr>
+                      <td valign="top" width="60%">Society Registration No</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="/wp-content/uploads/2023/02/IDF-Registration-IDF.pdf" target="_blank" rel="noopener">536 (under society Reg Act).</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">FCRA Registration No<br>(renewed in 2021)</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/08/FCRA-Renewal-Certificate-2021.pdf" target="_blank" rel="noopener">031170122</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">12A&nbsp; (new)</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/IDF-12A-new.pdf" target="_blank" rel="noopener">AAATI1253KE20142</a><br>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">80G&nbsp; (new)</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/IDF-80G-renewed.pdf" target="_blank" rel="noopener">AAATI1253KF19977</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">TAN No</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/IDF-TDS.pdf" target="_blank" rel="noopener">PTNS18635B</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">PAN No</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/IDF-PAN-Card1.pdf" target="_blank" rel="noopener">ABOCS3838A</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">MCA (CSR-1 Reg.)</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/IDF-Approval-of-CSR1-1.pdf" target="_blank" rel="noopener">00000268</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">EPF No</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/02/EPFO-IDF.pdf" target="_blank" rel="noopener">BR/PAT/10329</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">Professional Tax No</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://idfngo.org/wp-content/uploads/2023/08/Reg.-Professional-tax.pdf" target="_blank" rel="noopener">10PTNI00415C</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">Accredited with Credibility Alliance<br>under Desirable Norms</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://credibilityalliance.org/accreditation/accredited-organizations/" target="_blank" rel="noopener">CA/52/2015</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">Accredited with Guide Star</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://guidestarindia.org/Search.aspx?q=377" target="_blank" rel="noopener">No. 377</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">Registered with NITI Aayog,<br>Govt. of India DARPAN Portal</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="https://ngodarpan.gov.in/index.php/search/" target="_blank" rel="noopener">BR/2024/0456997</a>
+                        </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" width="60%">European Union PAROD no.</td>
+                      <td valign="top" width="40%">
+                        <strong>
+                          <a href="#">IN-2011-BY0-1401849567</a>
+                        </strong>
+                      </td>
+                    </tr>
+                  </tbody>                  
+            </table>
+        </section>
+        
+
+        <section id="directors" class="content-section" style="display: none;">
+            <h1>Board of Directors</h1>
+            <p>Content for Board of Directors...</p>
+        </section>
+        
+        <section id="partners" class="content-section" style="display: none;">
+            <h1>Our Partners</h1>
+            <p>Content for Our Partners...</p>
+        </section>
+        
+        <section id="policy" class="content-section" style="display: none;">
+            <h1>Our Policy</h1>
+            <p>Content for Our Policy...</p>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <!-- Left Section: About Us and Address -->
+        <div class="left">
+          <!-- About Us Box -->
+          <div class="box about">
+            <h2 class="topic">About Us</h2>
+            <p>We are committed to providing quality education to underprivileged children through various programs and initiatives. Our mission is to create lasting impact and bring positive change to society.</p>
+          </div>
+    
+          <!-- Address Box -->
+          <div class="box address">
+            <h2 class="topic">Address</h2>
+            <p>KUMHAR TOLA PS- TARAPUR, DIST- MUNGER, BIHAR 813221</p>
+          </div>
+        </div>
+    
+        <!-- Middle Section: Quick Links -->
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/HTML/projects.html">Projects</a></li>
+            <li><a href="/HTML/our-team.html">Our Team</a></li>
+            <li><a href="/HTML/donate.html">Donate</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right Section: Contact Us and Social Media -->
+        <div class="right">
+          <h2 class="topic">Contact Us</h2>
+          
+          <!-- Added phone number and email -->
+          <div class="contact-info">
+            <p><i class="bx bx-phone"></i> <a href="tel:+919835271957">+919835271957</a></p>
+            <p><i class="bx bx-envelope"></i> <a href="mailto:contact@shagunam.com">contact@shagunam.com</a></p>
+          </div>
+          
+          <input type="text" placeholder="Enter email" />
+          <input type="submit" value="Subscribe" />
+          <div class="media-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom Section -->
+      <div class="bottom">
+        <p>© 2024 Your Organization. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+        
+    <script>
+      // Toggle sidebar visibility when clicking the sidebar button
+      const sidebarButton = document.querySelector('#sidebar-button-container button');
+      const sidebar = document.querySelector('.sidebar');
+      const closeButton = document.querySelector('#sidebar-close-button');
+  
+      sidebarButton.addEventListener('click', () => {
+          sidebar.classList.add('open');
+          sidebarButton.style.display = 'none'; // Hide the sidebar toggle button when the sidebar is open
+      });
+  
+      closeButton.addEventListener('click', () => {
+          sidebar.classList.remove('open');
+          sidebarButton.style.display = 'block'; // Show the sidebar toggle button again when the sidebar is closed
+      });
+  
+      // Function to show content based on sectionId
+      function showSection(sectionId) {
+          // Hide all content sections
+          const sections = document.querySelectorAll('.content-section');
+          sections.forEach((section) => {
+              section.classList.remove('active');
+          });
+  
+          // Show the clicked section
+          const activeSection = document.getElementById(sectionId);
+          if (activeSection) {
+              activeSection.classList.add('active');
+          }
+      }
+  
+      // Set 'About Us' section as the default visible content when the page loads
+      document.addEventListener("DOMContentLoaded", function() {
+          showContent('about');  // Show 'About Us' section by default
+      });
+  
+      // Function to toggle display of different sections
+      function showContent(sectionId) {
+          const sections = document.querySelectorAll('.content-section');
+          sections.forEach(section => section.style.display = 'none');  // Hide all sections
+          document.getElementById(sectionId).style.display = 'block';  // Show selected section
+      }
+  
+  </script>
+  
+  <script>
+      // Mobile menu toggle for navigation
+      let menu = document.querySelector('#menu-icon');
+      let navlist = document.querySelector('.navlist');
+  
+      menu.onclick = () => {
+          menu.classList.toggle('bx-x');
+          navlist.classList.toggle('open');
+      }
+  </script>
+  
+  <script>
+      // Adjust sidebar position based on scroll and footer
+      window.addEventListener('scroll', function() {
+          const footerSection = document.querySelector('footer'); // Select the footer element
+          const sidebar = document.querySelector('.sidebar'); // Select the sidebar
+  
+          if (footerSection && sidebar) {
+              const footerTopPosition = footerSection.getBoundingClientRect().top + window.scrollY; // Absolute position of the footer top relative to the document
+              const viewportBottom = window.scrollY + window.innerHeight; // Position of the bottom of the viewport
+              const sidebarHeight = sidebar.offsetHeight;
+  
+              // Check if the viewport bottom has reached the top of the footer
+              if (viewportBottom >= footerTopPosition) {
+                  sidebar.style.position = 'absolute';
+                  sidebar.style.top = `${footerTopPosition - sidebarHeight}px`; // Corrected string interpolation
+              } else {
+                  sidebar.style.position = 'fixed';
+                  sidebar.style.top = '90px'; // Adjust according to your header height
+              }
+          }
+      });
+  </script>
+  
+</body>
+</html>
