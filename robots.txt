@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+sitemap : https://shagunam.com/sitemap.xml
