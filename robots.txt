@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: *
+Disallow: /images/
+
 sitemap : https://shagunam.com/sitemap.xml
